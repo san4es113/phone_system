@@ -16,7 +16,7 @@ class PasslostsController < ApplicationController
   # GET /passlosts/new
   def new
     @passlost = current_user.passlosts.build
-
+  end
   # GET /passlosts/1/edit
   def edit
   end
@@ -59,11 +59,6 @@ class PasslostsController < ApplicationController
       format.html { redirect_to passlosts_url, notice: 'Passlost was successfully destroyed.' }
       format.json { head :no_content }
     end
-  end
-  end
-
-  def homepage
-    @passlost = Passlost.new
   end
 
   private
