@@ -2,7 +2,7 @@
 <%= javascript_include_tag "https://www.google.com/jsapi" %>
 
 <p id="notice"><%= notice %></p>
-
+<div class="board">
 <p>
   <strong>T-R Separation:</strong>
   <%= @passlost.trSeparation %> Km
@@ -22,19 +22,23 @@
   <strong>RX Antenna Height:</strong>
   <%= @passlost.rxAntennaHeight %> Meters
 </p>
-
-
 <%= link_to 'Edit', edit_passlost_path(@passlost) ,:class => "btn btn-warning"%> |
 <%= link_to 'Back', passlosts_path ,:class => "btn btn-success"%>
+</div>
 
 
+
+<table>
+<tr>
+<td>
 <div class="logo">
   Free Space Chart
 </div>
 <div class="mychart">
   <%= line_chart [{name: "FreeSpace", data: @freespace.map{|t| [t[1], t[0]] }  }] %>
 </div>
-
+</td>
+<td>
 <script>
     Chartkick.options = {
         colors: ['#90ee7e']
@@ -47,7 +51,11 @@
 <div  class="mychart">
   <%= line_chart [{name: "Okumura", data: @okumura.map{|t| [t[1], t[0]] }  }] %>
 </div>
+</td>
+</tr>
 
+<tr>
+<td>
 <script>
     Chartkick.options = {
         colors: ['#7798BF']
@@ -61,7 +69,8 @@
   <%= line_chart [{name: "Hata", data: @hata.map{|t| [t[1], t[0]] }  }] %>
 </div>
 
-
+</td>
+<td>
 <script>
     Chartkick.options = {
         colors: ['#2b908f', '#90ee7e', '#f45b5b', '#7798BF', '#aaeeee', '#ff0066', '#eeaaee',
@@ -75,8 +84,9 @@
 <div  class="mychart">
    <%= line_chart [{name: "Lee_Philadenphia", data: @Lee_Philadenphia.map{|t| [t[1], t[0]] }  },{name: "Lee_Newark", data: @Lee_Newark.map{|t| [t[1], t[0]] } },{name: "Lee_Tokyo", data: @Lee_Tokyo.map{|t| [t[1], t[0]] }  }] %>
 </div>
-
-
+</td>
+</tr>
+</table>
 
 
 

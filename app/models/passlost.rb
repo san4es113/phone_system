@@ -7,7 +7,7 @@ class Passlost < ApplicationRecord
 	def self.CalculateFreeSpace frequency
 		@hashh={}
 		1.upto(20){ |elt|
-			@hashh[10.0*Math.log10(((elt*1000.0*3.1415*4.0)**2)/((C/(frequency))**2))] = 1.0*Math.log10(elt);
+			@hashh[10.0*Math.log10(((elt*1000.0*3.1415*4.0)**2)/((C/(frequency))**2))] = (1.0*Math.log10(elt)* 10).to_i.to_f / 10;
 		}
 			@hashh
 	end
@@ -54,7 +54,7 @@ class Passlost < ApplicationRecord
 			  @k=4;
 			end
 
-			@hashh[(20.0*Math.log10((((elt*3.1415*4.0)**2))/(C/(frequency))**2))+@A+@k-20.0*Math.log10(tx_ht/200.0)-@Ghr-9.0] = 1.0*Math.log10(elt);
+			@hashh[(20.0*Math.log10((((elt*3.1415*4.0)**2))/(C/(frequency))**2))+@A+@k-20.0*Math.log10(tx_ht/200.0)-@Ghr-9.0] = (1.0*Math.log10(elt)* 10).to_i.to_f / 10;
 		}
 			@hashh
 	end
@@ -64,7 +64,7 @@ class Passlost < ApplicationRecord
 
 		@par_h=3.2*((Math.log10(11.75*rx_ht))**2)-4.97;
 		1.upto(20){ |elt|
-			@hashh[69.55+26.16*Math.log10(frequency*10.0**6)-13.82*Math.log10(tx_ht)-@par_h+((44.9-6.55*Math.log10(tx_ht)))*(Math.log10(elt))] = 1.0*Math.log10(elt);
+			@hashh[69.55+26.16*Math.log10(frequency*10.0**6)-13.82*Math.log10(tx_ht)-@par_h+((44.9-6.55*Math.log10(tx_ht)))*(Math.log10(elt))] = (1.0*Math.log10(elt)* 10).to_i.to_f / 10;
 		}
 			@hashh
 	end
@@ -81,9 +81,9 @@ class Passlost < ApplicationRecord
 		@alph0=@alph1*@alph2*@alph3*@alph4*@alph5;
 
 		1.upto(20){ |elt|
-			@Lee_Philadenphia[108.49+36.8*(Math.log10(Math.log10(elt)/1.6))+10*3*Math.log10(frequency/900.0)-@alph0]= 1.0*Math.log10(elt);
-			@Lee_Newark[101.20+43.1*(Math.log10(Math.log10(elt)/1.6))+10.0*3.0*Math.log10(frequency/900.0)-@alph0]= 1.0*Math.log10(elt);
-			@Lee_Tokyo[123.77+30.5*(Math.log10(Math.log10(elt)/1.6))+10.0*3.0*Math.log10(frequency/900.0)-@alph0]= 1.0*Math.log10(elt);
+			@Lee_Philadenphia[108.49+36.8*(Math.log10(Math.log10(elt)/1.6))+10*3*Math.log10(frequency/900.0)-@alph0]= (1.0*Math.log10(elt)* 10).to_i.to_f / 10;
+			@Lee_Newark[101.20+43.1*(Math.log10(Math.log10(elt)/1.6))+10.0*3.0*Math.log10(frequency/900.0)-@alph0]= (1.0*Math.log10(elt)* 10).to_i.to_f / 10;
+			@Lee_Tokyo[123.77+30.5*(Math.log10(Math.log10(elt)/1.6))+10.0*3.0*Math.log10(frequency/900.0)-@alph0]= (1.0*Math.log10(elt)* 10).to_i.to_f / 10;
 		}
 			[@Lee_Philadenphia,@Lee_Newark,@Lee_Tokyo]
 	end

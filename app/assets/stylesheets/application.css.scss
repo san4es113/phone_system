@@ -15,7 +15,9 @@
  */
 @import "bootstrap-sprockets";
 @import "bootstrap";
+table tr td{
 
+}
 
 ul li a { 
     text-decoration: none; 
@@ -54,6 +56,10 @@ ul li a :hover{
  	width: 25%;
  	padding: 0;
 	background-color: #333333;
+ }
+ .board{
+ 	background-color:darkgrey;
+ 	border-top-right-radius:20px;
  }
 .logo {
 	font-size: 26px;
