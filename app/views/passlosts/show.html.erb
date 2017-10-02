@@ -4,23 +4,23 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Trseparation:</strong>
-  <%= @passlost.trSeparation %>
+  <strong>T-R Separation:</strong>
+  <%= @passlost.trSeparation %> Km
 </p>
 
 <p>
-  <strong>Carrierfrequency:</strong>
-  <%= @passlost.carrierFrequency %>
+  <strong>Carrier Frequency:</strong>
+  <%= @passlost.carrierFrequency %> MHz
 </p>
 
 <p>
-  <strong>Txantennaheight:</strong>
-  <%= @passlost.txAntennaHeight %>
+  <strong>TX Antenna Height:</strong>
+  <%= @passlost.txAntennaHeight %> Meters
 </p>
 
 <p>
-  <strong>Rxantennaheight:</strong>
-  <%= @passlost.rxAntennaHeight %>
+  <strong>RX Antenna Height:</strong>
+  <%= @passlost.rxAntennaHeight %> Meters
 </p>
 
 
@@ -39,3 +39,47 @@
 <div id="mychart">
   <%= line_chart [{name: "FreeSpace", data: @result.map{|t| [t[1], t[0]] }  }] %>
 </div>
+
+
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+ <script type="text/javascript">
+   
+     $(function() {
+  $(window).scroll(function() {
+    if($(this).scrollTop() != 0) 
+    {
+      $('#toTop').fadeIn();
+    } 
+    else {
+      $('#toTop').fadeOut();
+      }
+  });
+   
+  $('#toTop').click(function() {
+    $('body,html').animate({scrollTop:0},800);
+  });
+});
+
+ </script>
+
+<DIV ID = "toTop" > <p>
+  <strong>T-R Separation:</strong>
+  <%= @passlost.trSeparation %> Km
+</p>
+
+<p>
+  <strong>Carrier Frequency:</strong>
+  <%= @passlost.carrierFrequency %> MHz
+</p>
+
+<p>
+  <strong>TX Antenna Height:</strong>
+  <%= @passlost.txAntennaHeight %> Meters
+</p>
+
+<p>
+  <strong>RX Antenna Height:</strong>
+  <%= @passlost.rxAntennaHeight %> Meters
+</p>
+ </ DIV >

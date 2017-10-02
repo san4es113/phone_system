@@ -5,10 +5,10 @@
 <table class="table">
   <thead>
     <tr>
-      <th>Trseparation</th>
-      <th>Carrierfrequency</th>
-      <th>Txantennaheight</th>
-      <th>Rxantennaheight</th>
+      <th>T-R Separation</th>
+      <th>Carrier Frequency</th>
+      <th>TX Antenna Height</th>
+      <th>RX Antenna Height</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -16,10 +16,10 @@
   <tbody>
     <% @passlosts.each do |passlost| %>
       <tr>
-        <td><%= passlost.trSeparation %></td>
-        <td><%= passlost.carrierFrequency %></td>
-        <td><%= passlost.txAntennaHeight %></td>
-        <td><%= passlost.rxAntennaHeight %></td>
+        <td><%= passlost.trSeparation %> Km</td>
+        <td><%= passlost.carrierFrequency %> MHz</td>
+        <td><%= passlost.txAntennaHeight %> Meters</td>
+        <td><%= passlost.rxAntennaHeight %> Meters</td>
         <td><%= link_to 'Show', passlost , :class => "btn btn-info"%></td>
         <td><%= link_to 'Edit', edit_passlost_path(passlost) ,:class => "btn btn-warning"%></td>
         <td><%= link_to 'Destroy', passlost, method: :delete, data: { confirm: 'Are you sure?' } ,:class => "btn btn-danger"%></td>
@@ -30,4 +30,4 @@
 
 <br>
 
-<%= link_to 'New Passlost', new_passlost_path %>
+<%= link_to 'Create new parameters', new_passlost_path %>
