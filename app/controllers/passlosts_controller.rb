@@ -10,7 +10,8 @@ class PasslostsController < ApplicationController
   # GET /passlosts/1
   # GET /passlosts/1.json
   def show
-    @result=Passlost.CalculateFreeSpace @passlost.carrierFrequency
+    @freespace=Passlost.CalculateFreeSpace @passlost.carrierFrequency
+    @okumura=Passlost.CalculateOkumura @passlost.carrierFrequency,@passlost.txAntennaHeight,@passlost.rxAntennaHeight 
   end
 
   # GET /passlosts/new
