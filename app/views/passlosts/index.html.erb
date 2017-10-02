@@ -2,14 +2,13 @@
 
 <h1>Passlosts</h1>
 
-<table>
+<table class="table">
   <thead>
     <tr>
       <th>Trseparation</th>
       <th>Carrierfrequency</th>
       <th>Txantennaheight</th>
       <th>Rxantennaheight</th>
-      <th>User</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -21,10 +20,9 @@
         <td><%= passlost.carrierFrequency %></td>
         <td><%= passlost.txAntennaHeight %></td>
         <td><%= passlost.rxAntennaHeight %></td>
-        <td><%= passlost.user_id %></td>
-        <td><%= link_to 'Show', passlost %></td>
-        <td><%= link_to 'Edit', edit_passlost_path(passlost) %></td>
-        <td><%= link_to 'Destroy', passlost, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Show', passlost , :class => "btn btn-info"%></td>
+        <td><%= link_to 'Edit', edit_passlost_path(passlost) ,:class => "btn btn-warning"%></td>
+        <td><%= link_to 'Destroy', passlost, method: :delete, data: { confirm: 'Are you sure?' } ,:class => "btn btn-danger"%></td>
       </tr>
     <% end %>
   </tbody>

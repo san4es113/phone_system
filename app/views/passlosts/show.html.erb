@@ -23,13 +23,9 @@
   <%= @passlost.rxAntennaHeight %>
 </p>
 
-<p>
-  <strong>User:</strong>
-  <%= @passlost.user_id %>
-</p>
 
-<%= link_to 'Edit', edit_passlost_path(@passlost) %> |
-<%= link_to 'Back', passlosts_path %>
+<%= link_to 'Edit', edit_passlost_path(@passlost) ,:class => "btn btn-warning"%> |
+<%= link_to 'Back', passlosts_path ,:class => "btn btn-success"%>
 <script>
     Chartkick.options = {
         colors: ['#2b908f', '#90ee7e', '#f45b5b', '#7798BF', '#aaeeee', '#ff0066', '#eeaaee',
@@ -37,10 +33,9 @@
 
 </script>
 
-
+<div class="logo">
+  Free Space Chart
+</div>
 <div id="mychart">
-
-
   <%= line_chart [{name: "FreeSpace", data: @result.map{|t| [t[1], t[0]] }  }] %>
-
 </div>
