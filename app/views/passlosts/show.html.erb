@@ -39,6 +39,13 @@
 <div class="mychart">
   <%= line_chart [{name: "FreeSpace", data: @freespace.map{|t| [t[1], t[0]] }  }] %>
 </div>
+
+<script>
+    Chartkick.options = {
+        colors: ['#90ee7e']
+      };
+</script>
+
 <div class="logo">
   Okumura's Chart
 </div>
@@ -46,12 +53,18 @@
   <%= line_chart [{name: "Okumura", data: @okumura.map{|t| [t[1], t[0]] }  }] %>
 </div>
 
+<script>
+    Chartkick.options = {
+        colors: ['#7798BF']
+      };
+</script>
 
-
-
-
-
-
+<div class="logo">
+  Hata's Chart
+</div>
+<div  class="mychart">
+  <%= line_chart [{name: "Hata", data: @hata.map{|t| [t[1], t[0]] }  }] %>
+</div>
 
 
 

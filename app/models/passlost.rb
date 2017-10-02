@@ -27,4 +27,14 @@ class Passlost < ApplicationRecord
 		}
 			@hashh
 	end
+
+	def self.CalculateHata (frequency ,tx_ht, rx_ht)
+		@hashh={}
+
+		@par_h=3.2*((Math.log10(11.75*rx_ht))**2)-4.97;
+		1.upto(20){ |elt|
+			@hashh[69.55+26.16*Math.log10(frequency*10**6)-13.82*Math.log10(tx_ht)-@par_h+((44.9-6.55*Math.log10(tx_ht)))*(Math.log10(elt))] = 10.0*Math.log10(elt);
+		}
+			@hashh
+	end
 end

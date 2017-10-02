@@ -12,6 +12,7 @@ class PasslostsController < ApplicationController
   def show
     @freespace=Passlost.CalculateFreeSpace @passlost.carrierFrequency
     @okumura=Passlost.CalculateOkumura @passlost.carrierFrequency,@passlost.txAntennaHeight,@passlost.rxAntennaHeight 
+    @hata=Passlost.CalculateHata @passlost.carrierFrequency,@passlost.txAntennaHeight,@passlost.rxAntennaHeight 
   end
 
   # GET /passlosts/new
