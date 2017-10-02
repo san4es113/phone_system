@@ -11,6 +11,7 @@ class Passlost < ApplicationRecord
 		}
 			@hashh
 	end
+
 	def self.CalculateOkumura (frequency ,tx_ht, rx_ht)
 		@hashh={}
 
@@ -33,8 +34,27 @@ class Passlost < ApplicationRecord
 
 		@par_h=3.2*((Math.log10(11.75*rx_ht))**2)-4.97;
 		1.upto(20){ |elt|
-			@hashh[69.55+26.16*Math.log10(frequency*10**6)-13.82*Math.log10(tx_ht)-@par_h+((44.9-6.55*Math.log10(tx_ht)))*(Math.log10(elt))] = 10.0*Math.log10(elt);
+			@hashh[69.55+26.16*Math.log10(frequency*10.0**6)-13.82*Math.log10(tx_ht)-@par_h+((44.9-6.55*Math.log10(tx_ht)))*(Math.log10(elt))] = 10.0*Math.log10(elt);
 		}
 			@hashh
+	end
+	def self.CalculateLee (frequency ,tx_ht, rx_ht)
+		@Lee_Philadenphia={}
+		@Lee_Newark={}
+		@Lee_Tokyo={}
+
+		@alph1=(tx_ht/30.48)**2;
+		@alph2=(rx_ht/3);
+		@alph3=1;
+		@alph4=10**(6/40); # Base Statino antenna gain is 6/4 dB corresponding to 10^(6/40) actual value
+		@alph5=0.25; # alpha5=-6dB corresponding to 0.25 actual value
+		@alph0=@alph1*@alph2*@alph3*@alph4*@alph5;
+
+		1.upto(20){ |elt|
+			@Lee_Philadenphia[108.49+36.8*(Math.log10(Math.log10(elt)/1.6))+10*3*Math.log10(frequency/900.0)-@alph0]= 10.0*Math.log10(elt);
+			@Lee_Newark[101.20+43.1*(Math.log10(Math.log10(elt)/1.6))+10.0*3.0*Math.log10(frequency/900.0)-@alph0]= 10.0*Math.log10(elt);
+			@Lee_Tokyo[123.77+30.5*(Math.log10(Math.log10(elt)/1.6))+10.0*3.0*Math.log10(frequency/900.0)-@alph0]= 10.0*Math.log10(elt);
+		}
+			[@Lee_Philadenphia,@Lee_Newark,@Lee_Tokyo]
 	end
 end

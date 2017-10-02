@@ -26,12 +26,7 @@
 
 <%= link_to 'Edit', edit_passlost_path(@passlost) ,:class => "btn btn-warning"%> |
 <%= link_to 'Back', passlosts_path ,:class => "btn btn-success"%>
-<script>
-    Chartkick.options = {
-        colors: ['#2b908f', '#90ee7e', '#f45b5b', '#7798BF', '#aaeeee', '#ff0066', '#eeaaee',
-            '#55BF3B', '#DF5353', '#7798BF', '#aaeeee']};
 
-</script>
 
 <div class="logo">
   Free Space Chart
@@ -67,8 +62,19 @@
 </div>
 
 
+<script>
+    Chartkick.options = {
+        colors: ['#2b908f', '#90ee7e', '#f45b5b', '#7798BF', '#aaeeee', '#ff0066', '#eeaaee',
+            '#55BF3B', '#DF5353', '#7798BF', '#aaeeee']};
 
+</script>
 
+<div class="logo">
+  Urban's charts
+</div>
+<div  class="mychart">
+   <%= line_chart [{name: "Lee_Philadenphia", data: @Lee_Philadenphia.map{|t| [t[1], t[0]] }  },{name: "Lee_Newark", data: @Lee_Newark.map{|t| [t[1], t[0]] } },{name: "Lee_Tokyo", data: @Lee_Tokyo.map{|t| [t[1], t[0]] }  }] %>
+</div>
 
 
 
@@ -136,4 +142,4 @@
   <strong>RX Antenna Height:</strong>
   <%= @passlost.rxAntennaHeight %> Meters
 </p>
- </ DIV >
+ </DIV>

@@ -13,6 +13,7 @@ class PasslostsController < ApplicationController
     @freespace=Passlost.CalculateFreeSpace @passlost.carrierFrequency
     @okumura=Passlost.CalculateOkumura @passlost.carrierFrequency,@passlost.txAntennaHeight,@passlost.rxAntennaHeight 
     @hata=Passlost.CalculateHata @passlost.carrierFrequency,@passlost.txAntennaHeight,@passlost.rxAntennaHeight 
+    @Lee_Philadenphia,@Lee_Newark,@Lee_Tokyo=Passlost.CalculateLee @passlost.carrierFrequency,@passlost.txAntennaHeight,@passlost.rxAntennaHeight 
   end
 
   # GET /passlosts/new
