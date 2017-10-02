@@ -14,7 +14,7 @@ class PasslostsController < ApplicationController
 
   # GET /passlosts/new
   def new
-    @passlost = Passlost.new
+    @passlost = current_user.passlosts.build
 
   # GET /passlosts/1/edit
   def edit
@@ -23,7 +23,7 @@ class PasslostsController < ApplicationController
   # POST /passlosts
   # POST /passlosts.json
   def create
-    @passlost = Passlost.new(passlost_params)
+    @passlost = current_user.passlosts.build(passlost_params)
 
     respond_to do |format|
       if @passlost.save
