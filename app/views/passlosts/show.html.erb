@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Trseparation:</strong>
+  <%= @passlost.trSeparation %>
+</p>
+
+<p>
+  <strong>Carrierfrequency:</strong>
+  <%= @passlost.carrierFrequency %>
+</p>
+
+<p>
+  <strong>Txantennaheight:</strong>
+  <%= @passlost.txAntennaHeight %>
+</p>
+
+<p>
+  <strong>Rxantennaheight:</strong>
+  <%= @passlost.rxAntennaHeight %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @passlost.user_id %>
+</p>
+
+<%= link_to 'Edit', edit_passlost_path(@passlost) %> |
+<%= link_to 'Back', passlosts_path %>

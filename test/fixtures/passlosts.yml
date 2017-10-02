@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  trSeparation: MyString
+  carrierFrequency: 1
+  txAntennaHeight: 1
+  rxAntennaHeight: 1
+  user_id: 1
+
+two:
+  trSeparation: MyString
+  carrierFrequency: 1
+  txAntennaHeight: 1
+  rxAntennaHeight: 1
+  user_id: 1
