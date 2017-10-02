@@ -75,11 +75,14 @@ ul li a :hover{
 
 	.container{
 		width: 50%;
+		float:left;
 	}
 #main_content {
+padding:0;
 	#content {
 		text-align:center;
 		float: none;
+		padding:0;
 	}
 	padding-bottom: 100px;
 	.link {

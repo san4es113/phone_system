@@ -10,28 +10,38 @@
       </ul>
     </div>
   <% end %>
+<table>
+<tr>
+  
+   <td ><h4>T-R Separation</h4></td>
+   <td><%= form.text_field :trSeparation, id: :passlost_trSeparation ,:class => "form-control"%></td>
+   <td>Km</td>
+  
+</tr>
+  <tr>
+  
+   <td><h4>Carrier Frequency</h4></td>
+    <td><%= form.number_field :carrierFrequency, id: :passlost_carrierFrequency ,:class => "form-control"%></td>
+    <td>MHz</td>
+  </tr>
+  <tr>
 
-  <div class="field">
-    <%= form.label :trSeparation %>
-    <%= form.text_field :trSeparation, id: :passlost_trSeparation %>
-  </div>
+   <td><h4>TX Antenna Height</h4></td>
+   <td> <%= form.number_field :txAntennaHeight, id: :passlost_txAntennaHeight ,:class => "form-control"%> </td>
+   <td>Meters</td>
+</tr>
+  <tr>
 
-  <div class="field">
-    <%= form.label :carrierFrequency %>
-    <%= form.number_field :carrierFrequency, id: :passlost_carrierFrequency %>
-  </div>
-
-  <div class="field">
-    <%= form.label :txAntennaHeight %>
-    <%= form.number_field :txAntennaHeight, id: :passlost_txAntennaHeight %>
-  </div>
-
-  <div class="field">
-    <%= form.label :rxAntennaHeight %>
-    <%= form.number_field :rxAntennaHeight, id: :passlost_rxAntennaHeight %>
-  </div>
-
-  <div class="actions">
+    <td><h4>RX Antenna Height</h4></td>
+    <td><%= form.number_field :rxAntennaHeight, id: :passlost_rxAntennaHeight ,:class => "form-control"%> </td>
+    <td>Meters</td>
+</tr>
+<tr>
+ <td><h4>Save?</h4></td>
+  <td>
     <%= form.submit %>
-  </div>
+  </td>
+
+  </tr>
 <% end %>
+</table>

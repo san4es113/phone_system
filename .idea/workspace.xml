@@ -3,8 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="8b679344-3053-484b-8a1b-cdbb849b7cab" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/application.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/application.css.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/passlost.rb" afterPath="$PROJECT_DIR$/app/models/passlost.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/passlosts/show.html.erb" afterPath="$PROJECT_DIR$/app/views/passlosts/show.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/passlosts/_form.html.erb" afterPath="$PROJECT_DIR$/app/views/passlosts/_form.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/passlosts/edit.html.erb" afterPath="$PROJECT_DIR$/app/views/passlosts/edit.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/passlosts/homepage.html.erb" afterPath="$PROJECT_DIR$/app/views/passlosts/homepage.html.erb" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
@@ -24,42 +26,12 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="passlosts_controller.rb" pinned="false" current-in-tab="false">
+      <file leaf-file-name="passlosts_controller.rb" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/passlosts_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="40">
-              <caret line="10" column="25" lean-forward="true" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
-              <folding>
-                <marker date="1506976409121" expanded="true" signature="25:2484" ph=" ... end" />
-                <marker date="1506976409121" expanded="true" signature="124:164" ph="##..." />
-                <marker date="1506976409121" expanded="true" signature="216:260" ph="##..." />
-                <marker date="1506976409121" expanded="true" signature="271:726" ph=" ... end" />
-                <marker date="1506976409121" expanded="true" signature="760:811" ph=" ... end" />
-                <marker date="1506976409121" expanded="true" signature="848:854" ph=" ... end" />
-                <marker date="1506976409121" expanded="true" signature="858:900" ph="##..." />
-                <marker date="1506976409121" expanded="true" signature="913:1351" ph=" ... end" />
-                <marker date="1506976409121" expanded="true" signature="992:1345" ph="do ... end" />
-                <marker date="1506976409121" expanded="true" signature="1010:1337" ph="if ... end" />
-                <marker date="1506976409121" expanded="true" signature="1048:1119" ph="{ ... }" />
-                <marker date="1506976409121" expanded="true" signature="1140:1195" ph="{ ... }" />
-                <marker date="1506976409121" expanded="true" signature="1227:1242" ph="{ ... }" />
-                <marker date="1506976409121" expanded="true" signature="1263:1327" ph="{ ... }" />
-                <marker date="1506976409121" expanded="true" signature="1355:1411" ph="##..." />
-                <marker date="1506976409121" expanded="true" signature="1424:1814" ph=" ... end" />
-                <marker date="1506976409121" expanded="true" signature="1440:1808" ph="do ... end" />
-                <marker date="1506976409121" expanded="true" signature="1458:1800" ph="if ... end" />
-                <marker date="1506976409121" expanded="true" signature="1515:1586" ph="{ ... }" />
-                <marker date="1506976409121" expanded="true" signature="1607:1657" ph="{ ... }" />
-                <marker date="1506976409121" expanded="true" signature="1689:1705" ph="{ ... }" />
-                <marker date="1506976409121" expanded="true" signature="1726:1790" ph="{ ... }" />
-                <marker date="1506976409121" expanded="true" signature="1818:1868" ph="##..." />
-                <marker date="1506976409121" expanded="true" signature="1882:2080" ph=" ... end" />
-                <marker date="1506976409121" expanded="true" signature="1920:2074" ph="do ... end" />
-                <marker date="1506976409121" expanded="true" signature="1950:2027" ph="{ ... }" />
-                <marker date="1506976409121" expanded="true" signature="2046:2066" ph="{ ... }" />
-                <marker date="1506976409121" expanded="true" signature="2186:2239" ph=" ... end" />
-                <marker date="1506976409121" expanded="true" signature="2353:2480" ph=" ... end" />
-              </folding>
+            <state relative-caret-position="220">
+              <caret line="19" column="9" lean-forward="true" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -77,8 +49,8 @@
       <file leaf-file-name="passlost.rb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models/passlost.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="20">
-              <caret line="1" column="18" lean-forward="true" selection-start-line="1" selection-start-column="18" selection-end-line="1" selection-end-column="18" />
+            <state relative-caret-position="400">
+              <caret line="20" column="14" lean-forward="true" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="14" />
               <folding>
                 <marker date="1506982179178" expanded="true" signature="14:2309" ph=" ... end" />
                 <marker date="1506982179178" expanded="true" signature="158:271" ph=" ... end" />
@@ -89,21 +61,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="show.html.erb" pinned="false" current-in-tab="true">
+      <file leaf-file-name="show.html.erb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/passlosts/show.html.erb">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="22">
               <caret line="16" column="37" lean-forward="true" selection-start-line="16" selection-start-column="37" selection-end-line="16" selection-end-column="37" />
-              <folding>
-                <marker date="1506981739244" expanded="true" signature="2081:2372" ph="..." />
-                <marker date="1506981739244" expanded="true" signature="2105:2359" ph="{...}" />
-                <marker date="1506981739244" expanded="true" signature="2137:2265" ph="{...}" />
-                <marker date="1506981739244" expanded="true" signature="2177:2212" ph="{...}" />
-                <marker date="1506981739244" expanded="true" signature="2223:2261" ph="{...}" />
-                <marker date="1506981739244" expanded="true" signature="2392:2748" ph="..." />
-                <marker date="1506981739244" expanded="true" signature="2397:2472" ph="..." />
-                <marker date="1506981739244" expanded="true" signature="2477:2560" ph="..." />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -136,8 +99,8 @@
     <option name="CUSTOM_FILTER" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="49" />
-    <option name="y" value="274" />
+    <option name="x" value="324" />
+    <option name="y" value="615" />
     <option name="width" value="1049" />
     <option name="height" value="884" />
   </component>
@@ -166,6 +129,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="testapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="testapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="testapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -389,17 +366,18 @@
       <option name="presentableId" value="Default" />
       <updated>1506955207029</updated>
       <workItem from="1506955208599" duration="183000" />
-      <workItem from="1506970824020" duration="4531000" />
+      <workItem from="1506970824020" duration="5501000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4714000" />
+    <option name="totallyTimeSpent" value="5684000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="49" y="274" width="1049" height="884" extended-state="0" />
+    <frame x="324" y="615" width="1049" height="884" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24976167" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24976167" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -436,37 +414,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="520">
           <caret line="26" column="10" lean-forward="false" selection-start-line="26" selection-start-column="10" selection-end-line="26" selection-end-column="10" />
-          <folding>
-            <marker date="1506976409121" expanded="true" signature="25:2484" ph=" ... end" />
-            <marker date="1506976409121" expanded="true" signature="124:164" ph="##..." />
-            <marker date="1506976409121" expanded="true" signature="216:260" ph="##..." />
-            <marker date="1506976409121" expanded="true" signature="271:726" ph=" ... end" />
-            <marker date="1506976409121" expanded="true" signature="760:811" ph=" ... end" />
-            <marker date="1506976409121" expanded="true" signature="848:854" ph=" ... end" />
-            <marker date="1506976409121" expanded="true" signature="858:900" ph="##..." />
-            <marker date="1506976409121" expanded="true" signature="913:1351" ph=" ... end" />
-            <marker date="1506976409121" expanded="true" signature="992:1345" ph="do ... end" />
-            <marker date="1506976409121" expanded="true" signature="1010:1337" ph="if ... end" />
-            <marker date="1506976409121" expanded="true" signature="1048:1119" ph="{ ... }" />
-            <marker date="1506976409121" expanded="true" signature="1140:1195" ph="{ ... }" />
-            <marker date="1506976409121" expanded="true" signature="1227:1242" ph="{ ... }" />
-            <marker date="1506976409121" expanded="true" signature="1263:1327" ph="{ ... }" />
-            <marker date="1506976409121" expanded="true" signature="1355:1411" ph="##..." />
-            <marker date="1506976409121" expanded="true" signature="1424:1814" ph=" ... end" />
-            <marker date="1506976409121" expanded="true" signature="1440:1808" ph="do ... end" />
-            <marker date="1506976409121" expanded="true" signature="1458:1800" ph="if ... end" />
-            <marker date="1506976409121" expanded="true" signature="1515:1586" ph="{ ... }" />
-            <marker date="1506976409121" expanded="true" signature="1607:1657" ph="{ ... }" />
-            <marker date="1506976409121" expanded="true" signature="1689:1705" ph="{ ... }" />
-            <marker date="1506976409121" expanded="true" signature="1726:1790" ph="{ ... }" />
-            <marker date="1506976409121" expanded="true" signature="1818:1868" ph="##..." />
-            <marker date="1506976409121" expanded="true" signature="1882:2080" ph=" ... end" />
-            <marker date="1506976409121" expanded="true" signature="1920:2074" ph="do ... end" />
-            <marker date="1506976409121" expanded="true" signature="1950:2027" ph="{ ... }" />
-            <marker date="1506976409121" expanded="true" signature="2046:2066" ph="{ ... }" />
-            <marker date="1506976409121" expanded="true" signature="2186:2239" ph=" ... end" />
-            <marker date="1506976409121" expanded="true" signature="2353:2480" ph=" ... end" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -518,56 +466,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/passlosts_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="40">
-          <caret line="10" column="25" lean-forward="true" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
-          <folding>
-            <marker date="1506976409121" expanded="true" signature="25:2484" ph=" ... end" />
-            <marker date="1506976409121" expanded="true" signature="124:164" ph="##..." />
-            <marker date="1506976409121" expanded="true" signature="216:260" ph="##..." />
-            <marker date="1506976409121" expanded="true" signature="271:726" ph=" ... end" />
-            <marker date="1506976409121" expanded="true" signature="760:811" ph=" ... end" />
-            <marker date="1506976409121" expanded="true" signature="848:854" ph=" ... end" />
-            <marker date="1506976409121" expanded="true" signature="858:900" ph="##..." />
-            <marker date="1506976409121" expanded="true" signature="913:1351" ph=" ... end" />
-            <marker date="1506976409121" expanded="true" signature="992:1345" ph="do ... end" />
-            <marker date="1506976409121" expanded="true" signature="1010:1337" ph="if ... end" />
-            <marker date="1506976409121" expanded="true" signature="1048:1119" ph="{ ... }" />
-            <marker date="1506976409121" expanded="true" signature="1140:1195" ph="{ ... }" />
-            <marker date="1506976409121" expanded="true" signature="1227:1242" ph="{ ... }" />
-            <marker date="1506976409121" expanded="true" signature="1263:1327" ph="{ ... }" />
-            <marker date="1506976409121" expanded="true" signature="1355:1411" ph="##..." />
-            <marker date="1506976409121" expanded="true" signature="1424:1814" ph=" ... end" />
-            <marker date="1506976409121" expanded="true" signature="1440:1808" ph="do ... end" />
-            <marker date="1506976409121" expanded="true" signature="1458:1800" ph="if ... end" />
-            <marker date="1506976409121" expanded="true" signature="1515:1586" ph="{ ... }" />
-            <marker date="1506976409121" expanded="true" signature="1607:1657" ph="{ ... }" />
-            <marker date="1506976409121" expanded="true" signature="1689:1705" ph="{ ... }" />
-            <marker date="1506976409121" expanded="true" signature="1726:1790" ph="{ ... }" />
-            <marker date="1506976409121" expanded="true" signature="1818:1868" ph="##..." />
-            <marker date="1506976409121" expanded="true" signature="1882:2080" ph=" ... end" />
-            <marker date="1506976409121" expanded="true" signature="1920:2074" ph="do ... end" />
-            <marker date="1506976409121" expanded="true" signature="1950:2027" ph="{ ... }" />
-            <marker date="1506976409121" expanded="true" signature="2046:2066" ph="{ ... }" />
-            <marker date="1506976409121" expanded="true" signature="2186:2239" ph=" ... end" />
-            <marker date="1506976409121" expanded="true" signature="2353:2480" ph=" ... end" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/passlost.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20">
-          <caret line="1" column="18" lean-forward="true" selection-start-line="1" selection-start-column="18" selection-end-line="1" selection-end-column="18" />
+        <state relative-caret-position="400">
+          <caret line="20" column="14" lean-forward="true" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="14" />
           <folding>
             <marker date="1506982179178" expanded="true" signature="14:2309" ph=" ... end" />
             <marker date="1506982179178" expanded="true" signature="158:271" ph=" ... end" />
@@ -581,16 +483,23 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="22">
           <caret line="16" column="37" lean-forward="true" selection-start-line="16" selection-start-column="37" selection-end-line="16" selection-end-column="37" />
-          <folding>
-            <marker date="1506981739244" expanded="true" signature="2081:2372" ph="..." />
-            <marker date="1506981739244" expanded="true" signature="2105:2359" ph="{...}" />
-            <marker date="1506981739244" expanded="true" signature="2137:2265" ph="{...}" />
-            <marker date="1506981739244" expanded="true" signature="2177:2212" ph="{...}" />
-            <marker date="1506981739244" expanded="true" signature="2223:2261" ph="{...}" />
-            <marker date="1506981739244" expanded="true" signature="2392:2748" ph="..." />
-            <marker date="1506981739244" expanded="true" signature="2397:2472" ph="..." />
-            <marker date="1506981739244" expanded="true" signature="2477:2560" ph="..." />
-          </folding>
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/passlosts_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="19" column="9" lean-forward="true" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
+          <folding />
         </state>
       </provider>
     </entry>
