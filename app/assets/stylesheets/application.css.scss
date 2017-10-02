@@ -33,6 +33,19 @@ ul li a :hover{
  
  .subitems_menu{
 	list-style: none;
+ 	color:red;
+ 	float:left;
+ 	width: 35%;
+ 	padding: 5px;
+	background-color: #333333;
+}
+ .subitems_menu:hover{
+	list-style: none;
+ 	color:red;
+ 	float:left;
+ 	width: 35%;
+ 	padding: 10px;
+	background-color: #333333;
 }
  .items_menu{
  	list-style:none;
@@ -59,8 +72,8 @@ ul li a :hover{
 	}
 #main_content {
 	#content {
+		text-align:center;
 		float: none;
-		margin:0;
 	}
 	padding-bottom: 100px;
 	.link {
@@ -68,10 +81,23 @@ ul li a :hover{
 		border-bottom: 1px solid #e9e9e9;
 		.title {
 
-		
+			a {
+				color: #FF4500;
+			}
 		}
 	}
-
+	.comments_title {
+		margin-top: 2em;
+	}
+	#comments {
+		.comment {
+			padding: 1em 0;
+			border-top: 1px solid #E9E9E9;
+			.lead {
+				margin-bottom: 0;
+			}
+		}
+	}
 }
 .o{
 	color:white;
@@ -86,6 +112,24 @@ ul li a :hover{
 	display:block;
 }
 .o:hover{
+	color: black;
+	text-decoration: none;
+	background-color: #16A280;
+ 	margin-left: 15px;
+}
+.oo{
+	color:white;
+	text-decoration: none; 
+ 	background-color: #333333;
+ 	margin-left: 25px;
+ 	border-radius: 3px;
+ 	-webkit-transition: all 1s ease-out;
+ 	-moz-transition: all  1s ease-out;
+ 	padding: 3%;
+	width: 92%;
+	display:block;
+}
+.oo:hover{
 	color: black;
 	text-decoration: none;
 	background-color: #16A280;
